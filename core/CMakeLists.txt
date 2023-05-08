@@ -1,2 +1,2 @@
 ﻿include_directories("include" "../ext/SDL/include")
-add_library(militiaris STATIC "types.cpp" "window.cpp" "app.cpp")
+add_library(militaris STATIC "types.cpp" "window.cpp" "app.cpp")

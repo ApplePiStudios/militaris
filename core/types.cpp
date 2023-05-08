@@ -1,4 +1,4 @@
-#include <militiaris/types.hpp>
+#include <militaris/types.hpp>
 
 Vec2 Vec2::operator-(Vec2 arg)
 {

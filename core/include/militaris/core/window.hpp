@@ -1,7 +1,7 @@
 #pragma once
 #include <SDL3/SDL.h>
 #include <string>
-#include <militiaris/types.hpp>
+#include <militaris/types.hpp>
 
 class WindowClass
 {

@@ -1,4 +1,4 @@
-#include <militiaris/core/window.hpp>
+#include <militaris/core/window.hpp>
 
 WindowClass::WindowClass(Vec2 size, std::string title, ColorData color) : m_size{ size }, m_title{ title }, m_color{ color }
 {

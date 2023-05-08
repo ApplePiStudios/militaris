@@ -1,5 +1,5 @@
 #pragma once
-#include <militiaris/core/window.hpp>
+#include <militaris/core/window.hpp>
 
 class App
 {

@@ -1,4 +1,4 @@
-#include <militiaris/app.hpp>
+#include <militaris/app.hpp>
 
 class myApp : public App
 {
