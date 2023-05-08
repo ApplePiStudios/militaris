@@ -11,7 +11,7 @@ void WindowClass::init()
 	SDL_CreateWindowAndRenderer(m_size.x, m_size.y, SDL_WINDOW_RESIZABLE, &m_window, &m_renderer);
 }
 
-void WindowClass::update()
+bool WindowClass::update()
 {
 	SDL_SetWindowTitle(m_window, m_title.c_str());
 	SDL_GetWindowSize(m_window, &m_size.x, &m_size.y);
@@ -23,10 +23,11 @@ void WindowClass::update()
 			m_key = m_event.key.keysym.sym;
 			break;
 		case SDL_EVENT_QUIT:
-			delete this;
+			return false;
 			break;
 		}
 	}
+	return true;
 }
 
 WindowClass::~WindowClass()
@@ -44,4 +45,9 @@ SDL_Renderer* WindowClass::getRenderer()
 SDL_Keycode WindowClass::key()
 {
 	return m_key;
+}
+
+void WindowClass::kill()
+{
+	delete this;
 }

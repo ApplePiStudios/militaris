@@ -7,7 +7,6 @@ class WindowClass
 {
 private:
 	void init();
-	void update();
 	bool m_fullscreen = false;
 	Vec2 m_size;
 	std::string m_title;
@@ -21,4 +20,6 @@ public:
 	~WindowClass();
 	SDL_Renderer* getRenderer();
 	SDL_Keycode key();
+	bool update();
+	void kill();
 };
