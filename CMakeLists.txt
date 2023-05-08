@@ -1,6 +1,4 @@
-﻿cmake_minimum_required (VERSION 3.8)
-
-option(BUILD_SHARED_LIBS OFF)
+﻿cmake_minimum_required(VERSION 3.8)
 
 project("militiaris")
 add_subdirectory("core")
