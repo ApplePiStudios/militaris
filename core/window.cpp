@@ -27,6 +27,9 @@ bool WindowClass::update()
 			break;
 		}
 	}
+	SDL_RenderClear(m_renderer);
+	SDL_SetRenderDrawColor(m_renderer, m_color.r, m_color.g, m_color.b, m_color.a);
+	SDL_RenderPresent(m_renderer);
 	return true;
 }
 
