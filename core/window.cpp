@@ -19,9 +19,6 @@ bool WindowClass::update()
 	{
 		switch (m_event.type)
 		{
-		case SDL_EVENT_KEY_DOWN:
-			m_key = m_event.key.keysym.sym;
-			break;
 		case SDL_EVENT_QUIT:
 			return false;
 			break;
@@ -43,11 +40,6 @@ WindowClass::~WindowClass()
 SDL_Renderer* WindowClass::getRenderer()
 {
 	return m_renderer;
-}
-
-SDL_Keycode WindowClass::key()
-{
-	return m_key;
 }
 
 void WindowClass::kill()
