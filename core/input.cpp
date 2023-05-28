@@ -2,7 +2,7 @@
 
 bool keydown(WindowClass x, SDL_Keycode y)
 {
-	if (x.m_event.key.keysym.sym == y && x.m_event.type == SDL_EVENT_KEY_DOWN)
+	if (x.m_keys[y] == 1)
 	{
 		return true;
 	}
